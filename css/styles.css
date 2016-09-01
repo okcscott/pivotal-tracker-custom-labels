@@ -1,0 +1,105 @@
+/* Chop */
+.preview a.label.chop-label {
+  background-color: #ffac48;
+  color: #a6610e;
+  border-radius: 20px;
+  margin: 0 2px;
+  padding: 1px 6px 1px 6px;
+  white-space: nowrap;
+}
+
+.labels_maker .selected.labels li a.label.chop-label + a.remove:before {
+  border-color: #a6610e;
+}
+
+.labels_maker .selected.labels li a.label.chop-label,
+.labels_maker .selected.labels li a.label.chop-label + a.remove {
+  background-color: #ffac48;
+  color: #a6610e;
+}
+
+.labels_maker .selected.labels li a.label.chop-label:hover,
+.labels_maker .selected.labels li a.label.chop-label + a.remove:hover {
+  background-color: #a6610e;
+  color: #fff;
+}
+
+/* Open */
+.preview a.label.open-label {
+  background-color: #fcdb51;
+  color: #9d6f00;
+  border-radius: 20px;
+  margin: 0 2px;
+  padding: 1px 6px 1px 6px;
+  white-space: nowrap;
+}
+
+.labels_maker .selected.labels li a.label.open-label + a.remove:before {
+  border-color: #9d6f00;
+}
+
+.labels_maker .selected.labels li a.label.open-label,
+.labels_maker .selected.labels li a.label.open-label + a.remove {
+  background-color: #fcdb51;
+  color: #9d6f00;
+}
+
+.labels_maker .selected.labels li a.label.open-label:hover,
+.labels_maker .selected.labels li a.label.open-label + a.remove:hover {
+  background-color: #9d6f00;
+  color: #fff;
+}
+
+/* Church Metrics */
+
+.preview a.label.church-metrics-label {
+  background-color: #7fc661;
+  color: #416E28;
+  border-radius: 20px;
+  margin: 0 2px;
+  padding: 1px 6px 1px 6px;
+  white-space: nowrap;
+}
+
+.labels_maker .selected.labels li a.label.church-metrics-label + a.remove:before {
+  border-color: #416E28;
+}
+
+.labels_maker .selected.labels li a.label.church-metrics-label,
+.labels_maker .selected.labels li a.label.church-metrics-label + a.remove {
+  background-color: #7fc661;
+  color: #416E28;
+}
+
+.labels_maker .selected.labels li a.label.church-metrics-label:hover,
+.labels_maker .selected.labels li a.label.church-metrics-label + a.remove:hover {
+  background-color: #416E28;
+  color: #fff;
+}
+
+/* Develop.Me */
+
+.preview a.label.dev-me-label {
+  background-color: #64b4f2;
+  color: #395468;
+  border-radius: 20px;
+  margin: 0 2px;
+  padding: 1px 6px 1px 6px;
+  white-space: nowrap;
+}
+
+.labels_maker .selected.labels li a.label.dev-me-label + a.remove:before {
+  border-color: #395468;
+}
+
+.labels_maker .selected.labels li a.label.dev-me-label,
+.labels_maker .selected.labels li a.label.dev-me-label + a.remove {
+  background-color: #64b4f2;
+  color: #395468;
+}
+
+.labels_maker .selected.labels li a.label.dev-me-label:hover,
+.labels_maker .selected.labels li a.label.dev-me-label + a.remove:hover {
+  background-color: #395468;
+  color: #fff;
+}

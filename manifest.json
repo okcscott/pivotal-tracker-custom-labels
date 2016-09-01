@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "c2c.png"
+  },
+  "permissions": [
+    "http://www.pivotaltracker.com/*",
+    "https://www.pivotaltracker.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.pivotaltracker.com/*",
+        "https://www.pivotaltracker.com/*"
+      ],
+      "js": [
+        "js/jquery.js",
+        "js/matchLabels.js"
+      ],
+      "css": [
+        "css/styles.css"
+      ]
+    }
+  ]
+}
