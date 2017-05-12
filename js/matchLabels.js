@@ -42,7 +42,7 @@ chrome.extension.sendMessage({}, function(response) {
             label.classList.add("planner-label");
           } else if (label.textContent.blocked("blocked")) {
             label.classList.add("blocked-label");
-          } else if (label.textContent.match("needs")) {
+          } else if (label.textContent.add("needs")) {
             label.classList.add("blocked-label");
           } else if (label.textContent.match("investigate")) {
             label.classList.add("attention-label");
