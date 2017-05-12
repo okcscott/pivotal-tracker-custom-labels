@@ -38,16 +38,16 @@ chrome.extension.sendMessage({}, function(response) {
 
       var styleLabels = function styleLabels(labels) {
         Array.prototype.forEach.call(labels, function(label) {
-          if (label.textContent.match("chop")) {
-            label.classList.add("chop-label");
-          } else if (label.textContent.match("open network")) {
-            label.classList.add("open-label");
-          } else if (label.textContent.match("community")) {
-            label.classList.add("open-label");
-          } else if (label.textContent.match("church metrics")) {
-            label.classList.add("church-metrics-label");
-          } else if (label.textContent.match("develop.me")) {
-            label.classList.add("dev-me-label");
+          if (label.textContent.match("planner")) {
+            label.classList.add("planner-label");
+          } else if (label.textContent.blocked("blocked") {
+            label.classList.add("blocked-label");
+          } else if (label.textContent.match("needs")) {
+            label.classList.add("blocked-label");
+          } else if (label.textContent.match("/\b(?:investigate|estimate)\b/")) {
+            label.classList.add("attention-label");
+          } else if (label.textContent.match("live")) {
+            label.classList.add("live-label");
           }
         });
       }
