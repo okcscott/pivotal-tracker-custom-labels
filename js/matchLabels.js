@@ -40,8 +40,6 @@ chrome.extension.sendMessage({}, function(response) {
         Array.prototype.forEach.call(labels, function(label) {
           if (label.textContent.match("planner")) {
             label.classList.add("planner-label");
-          } else if (label.textContent.blocked("blocked")) {
-            label.classList.add("blocked-label");
           } else if (label.textContent.add("needs")) {
             label.classList.add("blocked-label");
           } else if (label.textContent.match("investigate")) {
