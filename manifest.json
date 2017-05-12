@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Pivotal Tracker Custom Labels",
+  "name": "Simbify Pivotal Tracker",
   "description": "Color code specific labels in Pivotal Tracker",
   "version": "1.0",
 
