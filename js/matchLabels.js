@@ -1,3 +1,12 @@
+var LABEL_RULES = {
+  // Define label rules here:
+  // 'label_text': 'label_css_class'
+  'planner': 'planner-label',
+  'needs': 'blocked-label',
+  'investigate': 'attention-label',
+  'live': 'live-label'
+};
+
 chrome.extension.sendMessage({}, function(response) {
   var readyStateCheckInterval = setInterval(function() {
     if (document.readyState === "complete") {
@@ -38,15 +47,11 @@ chrome.extension.sendMessage({}, function(response) {
 
       var styleLabels = function styleLabels(labels) {
         Array.prototype.forEach.call(labels, function(label) {
-          if (label.textContent.match("planner")) {
-            label.classList.add("planner-label");
-          } else if (label.textContent.match("needs")) {
-            label.classList.add("blocked-label");
-          } else if (label.textContent.match("investigate")) {
-            label.classList.add("attention-label");
-          } else if (label.textContent.match("live")) {
-            label.classList.add("live-label");
+          Object.keys(LABEL_RULES).forEach(function(label_rule){
+            if (label.textContent.match(label_rule)) {
+            label.classList.add(LABEL_RULES[label_rule]);
           }
+          });
         });
       }
     }
