@@ -61,18 +61,18 @@
   white-space: nowrap;
 }
 
-.labels_maker .selected.labels li a.label.church-metrics-label + a.remove:before {
+.labels_maker .selected.labels li a.label.attention-label + a.remove:before {
   border-color: #416E28;
 }
 
-.labels_maker .selected.labels li a.label.church-metrics-label,
-.labels_maker .selected.labels li a.label.church-metrics-label + a.remove {
+.labels_maker .selected.labels li a.label.attentions-label,
+.labels_maker .selected.labels li a.label.attention-label + a.remove {
   background-color: #7fc661;
   color: #416E28;
 }
 
-.labels_maker .selected.labels li a.label.church-metrics-label:hover,
-.labels_maker .selected.labels li a.label.church-metrics-label + a.remove:hover {
+.labels_maker .selected.labels li a.label.attention-label:hover,
+.labels_maker .selected.labels li a.label.attention-label + a.remove:hover {
   background-color: #416E28;
   color: #fff;
 }
