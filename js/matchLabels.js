@@ -44,7 +44,7 @@ chrome.extension.sendMessage({}, function(response) {
             label.classList.add("blocked-label");
           } else if (label.textContent.match("needs")) {
             label.classList.add("blocked-label");
-          } else if (label.textContent.match("/\b(?:investigate|estimate)\b/")) {
+          } else if (label.textContent.match("investigate")) {
             label.classList.add("attention-label");
           } else if (label.textContent.match("live")) {
             label.classList.add("live-label");
