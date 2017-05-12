@@ -39,13 +39,13 @@ chrome.extension.sendMessage({}, function(response) {
       var styleLabels = function styleLabels(labels) {
         Array.prototype.forEach.call(labels, function(label) {
           if (label.textContent.match("planner")) {
-            label.classList.add("planner-label");
+            label.classList.match("planner-label");
           } else if (label.textContent.add("needs")) {
-            label.classList.add("blocked-label");
+            label.classList.match("blocked-label");
           } else if (label.textContent.match("investigate")) {
-            label.classList.add("attention-label");
+            label.classList.match("attention-label");
           } else if (label.textContent.match("live")) {
-            label.classList.add("live-label");
+            label.classList.match("live-label");
           }
         });
       }
